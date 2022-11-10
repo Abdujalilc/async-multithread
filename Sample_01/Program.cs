@@ -1,5 +1,7 @@
-﻿await PrintAsync();   // вызов асинхронного метода
+﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
+await PrintAsync();   // вызов асинхронного метода
 Console.WriteLine("Некоторые действия в методе Main");
+Console.ReadLine();
 
 void Print()
 {
