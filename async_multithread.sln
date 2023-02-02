@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskDelay", "TaskDelay\Task
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskThreadId", "TaskThreadId\TaskThreadId.csproj", "{602A74C8-6431-4BDD-A778-796DE01CE1AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskAssign", "TaskAssign\TaskAssign.csproj", "{C082F7F4-7FA2-4AE6-98C9-D597D0CA6074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskAssign", "TaskAssign\TaskAssign.csproj", "{C082F7F4-7FA2-4AE6-98C9-D597D0CA6074}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTask", "ValueTask\ValueTask.csproj", "{D5404B2A-3C90-4FB7-837F-B672BBFBB01F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueTask", "ValueTask\ValueTask.csproj", "{D5404B2A-3C90-4FB7-837F-B672BBFBB01F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancellationToken", "CancellationToken\CancellationToken.csproj", "{6875EBD1-E431-4EA7-8503-0E9AEA94DE75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{D5404B2A-3C90-4FB7-837F-B672BBFBB01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5404B2A-3C90-4FB7-837F-B672BBFBB01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5404B2A-3C90-4FB7-837F-B672BBFBB01F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6875EBD1-E431-4EA7-8503-0E9AEA94DE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6875EBD1-E431-4EA7-8503-0E9AEA94DE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6875EBD1-E431-4EA7-8503-0E9AEA94DE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6875EBD1-E431-4EA7-8503-0E9AEA94DE75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
