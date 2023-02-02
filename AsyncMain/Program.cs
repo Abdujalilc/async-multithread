@@ -2,21 +2,21 @@
 {
     async static Task Main(string[] args)
     {
-        await PrintAsync();   // вызов асинхронного метода
-        Console.WriteLine("Некоторые действия в методе Main");
+        await PrintAsync();   // call async method
+        Console.WriteLine("Some actions in method Main");
 
 
         void Print()
         {
-            Thread.Sleep(3000);     // имитация продолжительной работы
+            Thread.Sleep(3000);     // imitation
             Console.WriteLine("Hello METANIT.COM");
         }
 
-        // определение асинхронного метода
+        // define async method
         async Task PrintAsync()
         {
-            Console.WriteLine("Начало метода PrintAsync"); // выполняется синхронно
-            await Task.Run(() => Print());                // выполняется асинхронно
+            Console.WriteLine("Начало метода PrintAsync");  // sync
+            await Task.Run(() => Print());                  // async
             Console.WriteLine("Конец метода PrintAsync");
         }
     }

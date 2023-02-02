@@ -1,12 +1,12 @@
 ﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
-await PrintAsync();   // вызов асинхронного метода
-Console.WriteLine("Некоторые действия в методе Main");
+await PrintAsync();   // call async method
+Console.WriteLine("Some actions in method Main");
 Console.ReadLine();
-// определение асинхронного метода
+// defime async method
 async Task PrintAsync()
 {
-    await Task.Delay(3000);     // имитация продолжительной работы
-    // или так
+    await Task.Delay(3000);     // imitate
+    // or
     //await Task.Delay(TimeSpan.FromMilliseconds(3000));
     Console.WriteLine("Hello METANIT.COM");
 }
@@ -17,7 +17,7 @@ PrintName("Sam");
 
 void PrintName(string name)
 {
-    Thread.Sleep(3000);     // имитация продолжительной работы
+    Thread.Sleep(3000);     // imitate
     Console.WriteLine(name);
 }
 
@@ -27,10 +27,10 @@ await PrintNameAsync("Tom");
 await PrintNameAsync("Bob");
 await PrintNameAsync("Sam");
 
-// определение асинхронного метода
+// defime async method
 async Task PrintNameAsync(string name)
 {
-    await Task.Delay(3000);     // имитация продолжительной работы
+    await Task.Delay(3000);     //imitate
     Console.WriteLine(name);
 }
 
