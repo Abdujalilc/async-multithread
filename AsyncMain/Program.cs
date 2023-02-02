@@ -4,14 +4,11 @@
     {
         await PrintAsync();   // call async method
         Console.WriteLine("Some actions in method Main");
-
-
         void Print()
         {
             Thread.Sleep(3000);     // imitation
             Console.WriteLine("Hello METANIT.COM");
         }
-
         // define async method
         async Task PrintAsync()
         {
