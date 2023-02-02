@@ -1,18 +1,24 @@
 ﻿Console.OutputEncoding = System.Text.Encoding.UTF8;
-await PrintAsync();   // вызов асинхронного метода
-Console.WriteLine("Некоторые действия в методе Main");
+await PrintAsync();   // call async method
+Console.WriteLine("Some action in method Main");
 Console.ReadLine();
 
 void Print()
 {
-    Thread.Sleep(3000);     // имитация продолжительной работы
+    Thread.Sleep(3000);     // imitation
     Console.WriteLine("Hello METANIT.COM");
 }
 
-// определение асинхронного метода
+// declare async method
 async Task PrintAsync()
 {
-    Console.WriteLine("Начало метода PrintAsync"); // выполняется синхронно
-    await Task.Run(() => Print());                // выполняется асинхронно
-    Console.WriteLine("Конец метода PrintAsync");
+    Console.WriteLine("PrintAsync methos started");     //sync
+    await Task.Run(() => Print());                      //async
+    Console.WriteLine("PrintAsync method finished");
+
+    await Task.Run(() =>
+    {
+        Thread.Sleep(3000);     // imitation
+        Console.WriteLine("Hello METANIT.COM");
+    });
 }
