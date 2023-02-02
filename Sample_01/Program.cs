@@ -18,7 +18,7 @@ async Task PrintAsync()
 
     await Task.Run(() =>
     {
-        Thread.Sleep(3000);     // imitation
+        Thread.Sleep(3000);// imitation
         Console.WriteLine("Hello METANIT.COM");
     });
 }
